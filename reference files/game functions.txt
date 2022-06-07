@@ -1,0 +1,56 @@
+// each player chooses a move
+// defense goes first (player then comp)
+// attacks go second (player then comp)
+
+const yourMove;
+const compMove;
+const savedCompMove;
+let yourHealth = 100
+let compHealth = 100
+
+//Turn counters
+function counter(y, c){
+  const move = Math.floor((Math.random()*5))
+  if (move >= 3 && y === 'attack'){
+    res = 'Computers defense was successful! You took 10 damage';
+    yourHealth -= 10
+  }else if (move > 3 && y === 'defense'){
+    res = 'Your defense failed! You dealt 15 damage';
+    compHealth -= 15;
+  }else if (move < 3 && y === 'attack') {
+    res = 'Computer defense failed! You dealt 15 damage!';
+    compHealth -= 15
+  }else if (move < 3 && y === 'counter'){
+    rest 'Your defense was not successful! You were dealt 15 damage!'
+    yourHealth -= 15
+  }
+}
+
+//Game Over
+function gameOver(){
+  if(yourHealth === 0 || compHealth === 0) {
+    res = 'gameOver!'
+  }
+}
+
+// Proccesses move to result 
+function damageStep(y, c){
+  if( y === 'attack' && c === 'attack') {
+    res = 'Both players took damage'
+    if (compHealth >= 10 && yourHealth >= 10){
+      compHealth -= 10
+      yourHealth -= 10
+    }else {
+      compHealth = 0
+      yourHealth = 0
+    }
+  } else if ( y === 'defense' && c === 'defense'){
+    res = 'Defensive action taken on both ends'
+  } else if ( y === 'attack' && c === 'counter'){
+    res = 'Comp is ready to defend'
+    counter(y,c)
+  }else if ( y === 'counter' && c === 'attack'){
+    res = 'You/'ve taken a defense stance'
+    counter(y,c)
+  }
+}

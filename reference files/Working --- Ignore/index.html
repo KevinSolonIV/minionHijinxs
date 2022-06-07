@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your description goes here">
+    <meta name="keywords" content="one, two, three">
+      
+    <title>Battle Card Game</title>
+      
+    <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap">
+</head>
+<body>
+    <section id="sideBar">
+        <h1>Game Title</h1>
+        <nav>
+            <ul id="navButtons">
+                <li id="start_game" class="active_phase start_game">Play!</li> <!--Default option, can replace/hide once cards are generated-->
+                <li id="turnCounter" class="instruction">Turn</li> <!--displays the turn-->
+				<li id="turnPhase" class="instruction">Turn Phase:</li> <!--displays the turn-->
+                <li id="nextStep" class="playStep">Select a Card</li> <!--Pull next game instruction here eg select card-->
+                <li id="playTurnStep" class="playStep">Press End Turn</li> <!--Can use this button to execute the turn and commence battle etc-->
+				<li id="damageStep" class="playStep">Damage Resolves</li>
+				<li id="cleanupStep" class="playStep">Clean Up</li>
+				<li id="cpusTurn" class="playStep">CPU's Turn</li>
+            </ul>
+
+        </nav>
+    </section>
+
+	<main id="the_game_is_here">
+        <section id="cpus_hand">
+        </section>
+        <section id="playArea">
+            <section id="cpuPlayArea">
+                <div id="cpuSlot1" class="emptySlot">
+                </div>
+                <div id="cpuSlot2" class="emptySlot">
+                </div>
+                <div id="cpuSlot3" class="emptySlot">
+                </div>
+            </section>
+            <section id=playerPlayArea>
+                <div id="playerSlot1" class="emptySlot">
+                </div>
+                <div id="playerSlot1" class="emptySlot">
+                </div>
+                <div id="playerSlot1" class="emptySlot">
+                </div>
+            </section>
+        </section>
+        <section id="users_hand">
+        </section>
+		<section>
+			<button id="endTurn">End Turn</button>
+		</section>
+	</main>
+		<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

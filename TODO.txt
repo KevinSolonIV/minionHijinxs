@@ -1,0 +1,16 @@
+Fix styling:
+-play areas do not stay in the middle once the cpu runs out of cards in hand
+-turn phases do not update after the first turn
+-attack and defense sprites are not working
+-images are not quite centered
+-attack and defense need to be pushed into the lower corners
+
+Fix functionality:
+-game never ends (needs win condition check)
+
+Extras?
+-animations
+-more pictures for cards
+-abilities?
+-strong against/weak against?
+-eventually maybe we could choose to attack a particular enemy with a particular ally?

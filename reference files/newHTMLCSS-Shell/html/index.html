@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your description goes here">
+    <meta name="keywords" content="one, two, three">
+      
+    <title>Battle Card Game</title>
+      
+    <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap">
+</head>
+<body>
+    <section id="sideBar">
+        <h1>Game Title</h1>
+        <nav>
+            <ul id="navButtons">
+                <li id="start_game">Start a New Game</li> <!--Default option, can replace/hide once cards are generated-->
+                <li>How to Play</li>
+                <li id="turn">Current Turn</li>
+                <li id="nextStep">Select a Card</li> <!--Pull next game instruction here eg select card-->
+                <li id="playTurn">Execute Turn</li> <!--Can use this button to execute the turn and commence battle etc-->
+            </ul>
+
+        </nav>
+    </section>
+
+	<main id="the_game_is_here">
+        <section id="cpus_hand">
+            <div class="cardSlot cpu">
+            </div>
+            <div class="cardSlot cpu">
+            </div>
+            <div class="cardSlot cpu">
+            </div>
+            <div class="cardSlot cpu">
+            </div>
+            <div class="cardSlot cpu">
+            </div>
+        </section>
+        <section id="playArea">
+            <section id="cpuPlayArea">
+                <div id="cpuSlot1" class="cardSlot cpu">
+                </div>
+                <div id="cpuSlot2" class="cardSlot cpu">
+                </div>
+                <div id="cpuSlot3" class="cardSlot cpu">
+                </div>
+            </section>
+            <section id=playerPlayArea>
+                <div id="playerSlot1" class="cardSlot player">
+                </div>
+                <div id="playerSlot1" class="cardSlot player">
+                </div>
+                <div id="playerSlot1" class="cardSlot player">
+                </div>
+            </section>
+        </section>
+        <section id="users_hand">
+            <div class="cardSlot player">
+            </div> 
+            <div class="cardSlot player">
+            </div>
+            <div class="cardSlot player">
+            </div> 
+            <div class="cardSlot player">
+            </div> 
+            <div class="cardSlot player">
+            </div>
+        </section>
+	</main>
+		<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

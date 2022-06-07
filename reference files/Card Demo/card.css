@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+}
+
+/*ul {
+  border-style: solid;
+  max-width: 8em;
+}
+*/
+.start_the_game {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+
+ 
+}
+
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+#frame_img {
+  max-width: 80%;
+}
+
+#cpus_hand {
+  display: flex;
+  justify-content: center;
+}
+
+#users_hand {
+  display: flex;
+  justify-content: center;
+}
+
+.cardData{
+  border-style: outset;
+  border-radius: 8px;
+}
+
+
+
+
+
+/* css for card proto*/
+
+.cardProto{
+  border-style:inset;
+  border-color: black;
+  background-color:wheat;
+}
+#cardArt {
+  max-width: 5em;
+  border-style: outset;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content:center
+  
+}
+
+
+
+.bottomCard {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10%;
+
+}
+li.attack::marker {
+  color: blue;
+  content: '⚔️';
+
+  
+}
+
+li.type::marker{
+  content:none
+}
+
+li#defense::marker{
+  content: '🛡️';
+}
